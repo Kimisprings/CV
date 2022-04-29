@@ -1,21 +1,275 @@
+
+/*******************************TAG SELECTION************************/
+
 body {
-  background-color: #FEFFDB;
+  font-family: 'Josefin Slab', serif;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #444444;
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 5.625rem;
+  line-height: 2;
+  margin: 50px auto 0 auto;
+}
+
+h2 {
+  color: #444444;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #444444;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 2;
+  width: auto;
 }
 
 hr {
-  border-style: dotted none none none;
-  width: 100%;
-  border-color: #FFC60B;
-  border-width: 5px;
+  border: dotted #444444 5px;
+  border-bottom: none;
+  width: 4%;
+  margin: 25px auto 25px auto;
 }
-h1 {
-  color: #FF8B00;
-  font-family: tahoma;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 1px #444444,
-  2px 1px 1px #444444;
+
+a {
+  color: #444444;
+  font-family: 'Nunito', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
 }
-h3 {
+
+a:hover {
   color: #FF8B00;
-  font-family: tahoma;
+}
+
+nav {
+
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+  min-height: 8vh;
+
+  background-color: #FFC60B;
+
+  font-family: 'Nunito', sans-serif;
+
+}
+
+/*******************************CLASS SELECTION************************/
+
+
+.nav-links {
+
+  display: flex;
+
+  justify-content: space-around;
+
+  width: 30%;
+
+}
+
+.nav-links li {
+
+  list-style: none;
+
+}
+
+.nav-links a {
+
+  color: #444444;
+
+  text-decoration: none;
+
+  letter-spacing: 3px;
+
+  font-weight: bold;
+
+  font-size: 14px;
+
+  padding: 14px 16px;
+
+}
+
+.nav-links a:hover:not(.active) {
+
+  background-color: #FEFFDB;
+
+}
+
+.nav-links li .active {
+
+  background-color: #FF8B00;
+
+}
+
+.top-container {
+  background-color: #FEFFDB;
+  margin: 0;
+  position: relative;
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+
+.tree {
+  height: 600px;
+  position: relative;
+  top: 100px;
+  width: 600px;
+}
+
+.leaves {
+  height: 250px;
+  width: 200px;
+  transform: scaleX(-1);
+  position: absolute;
+  top: 100px;
+  right: 200px;
+}
+
+.leaves2 {
+  height: 250px;
+  width: 200px;
+  transform: scaleY(-1);
+  position: absolute;
+  left: 120px;
+  top: 400px;
+}
+
+.blowingleaves {
+  height: 250px;
+  width: 600px;
+}
+
+.middle-container {
+  background-color: #FFC60B;
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.bottom-container {
+  background-color: #FEFFDB;
+  margin: 0;
+  padding: 50px 0 20px 0;
+}
+
+.hobbies {
+  margin: 0;
+  position: relative;
+  padding-top: 100px;
+  width: 25%;
+}
+
+.btn {
+  background: #FF8B00;
+  background-image: -webkit-linear-gradient(top, #FF8B00, #FEFFDB);
+  background-image: -moz-linear-gradient(top, #FF8B00, #FEFFDB);
+  background-image: -ms-linear-gradient(top, #FF8B00, #FEFFDB);
+  background-image: -o-linear-gradient(top, #FF8B00, #FEFFDB);
+  background-image: linear-gradient(to bottom, #FF8B00, #FEFFDB);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
+  color: #3d3a3d;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #FEFFDB;
+  background-image: -webkit-linear-gradient(top, #FEFFDB, #FF8B00);
+  background-image: -moz-linear-gradient(top, #FEFFDB, #FF8B00);
+  background-image: -ms-linear-gradient(top, #FEFFDB, #FF8B00);
+  background-image: -o-linear-gradient(top, #FEFFDB, #FF8B00);
+  background-image: linear-gradient(to bottom, #FEFFDB, #FF8B00);
+  text-decoration: none;
+}
+
+.skills {
+  padding-top: 50px;
+}
+
+.skill-row {
+  margin: 100px auto 100px auto;
+  text-align: left;
+  width: 50%;
+}
+
+.coding-img {
+  float: left;
+  height: 100px;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.html-img {
+  float: right;
+  height: 100px;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.css-img {
+  float: left;
+  height: 75px;
+  margin-right: 10px;
+  width: 60px;
+}
+
+.profile {
+  margin: auto;
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+.udemy-img {
+  float: right;
+  height: 75px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+.sololearn-img {
+  float: right;
+  height: 100px;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.codecademy-img {
+  float: right;
+  height: 50px;
+  margin-right: 10px;
+  width: 250px;
+}
+
+.copyright {
+  color: #FF8B00;
+  font-size: 90%;
+  padding: 20px 10px;
+}
+
+.contact-me {
+  margin: 50px auto  50px auto;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;
 }
